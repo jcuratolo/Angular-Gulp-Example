@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html ng-app="main">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <title>Example of basic angular app with gulp</title>
-    <script src="app.module.js"></script>
-    <script src="page1.module.js"></script>
-    <script src="page2.module.js"></script>
-    <script src="defaultPage.module.js"></script>
-    <!-- inject:js -->
-    <!-- endinject -->
-  </head>
+</head>
 
-  <body ng-controller="MainController">
+<body ng-controller="MainController">
     <h1>Simple View Routing</h1>
     <a href="#/page1">Page 1</a>
     <a href="#/page2">Page 2</a>
     <a href="#/derp">Unknown href</a>
-    <ng-view ></ng-view>
+    <ng-view></ng-view>
     <p>This is the structure of this app:</p>
     <ul>
         <li>
@@ -24,9 +19,9 @@
             <ul>
                 <li>MainController (Controller)</li>
                 <li>Page1 (Module)
-                <ul>
-                    <li>Page1Controller</li>
-                </ul>
+                    <ul>
+                        <li>Page1Controller</li>
+                    </ul>
                 </li>
                 <li>Page2 (Module)
                     <ul>
@@ -42,6 +37,14 @@
         </li>
     </ul>
     {{ourLocation}}
-  </body>
+    <script src="app.module.js"></script>
+    <script src="page1.module.js"></script>
+    <script src="page2.module.js"></script>
+    <script src="defaultPage.module.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <!-- inject:js -->
+    <!-- endinject -->
+</body>
 
 </html>
