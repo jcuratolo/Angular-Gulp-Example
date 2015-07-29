@@ -1,0 +1,28 @@
+{
+  "name": "angular-gulp-example",
+  "version": "0.0.0",
+  "description": "A basic Angular + Gulp setup with a crude build process.",
+  "main": "app.module.js",
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-debug": "^2.0.1",
+    "gulp-inject": "^1.5.0",
+    "gulp-ng-html2js": "^0.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcuratolo/Angular-Gulp-Example.git"
+  },
+  "author": "Jcuratolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcuratolo/Angular-Gulp-Example/issues"
+  },
+  "homepage": "https://github.com/jcuratolo/Angular-Gulp-Example"
+}
